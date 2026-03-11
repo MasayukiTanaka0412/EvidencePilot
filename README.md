@@ -47,6 +47,21 @@ Evidence Pilot is a Windows-compatible Python CLI tool for manual testers. It co
    - `CAPTURE_ROOT`
    - `STEP_NAME_MAX_LENGTH`
 
+### How to get `AZDO_PAT`
+
+1. Sign in to your Azure DevOps organization at `https://dev.azure.com/{your-organization}`.
+2. Click your profile picture in the top-right corner and select **Personal access tokens**. or Visit `https://dev.azure.com/{your-organization}/_usersSettings/tokens`
+3. Click **+ New Token**.
+4. Fill in the form:
+   - **Name**: give it a descriptive name (e.g., `EvidencePilot`)
+   - **Organization**: select the organization Evidence Pilot will connect to
+   - **Expiration**: choose an appropriate expiry date
+   - **Scopes**: select **Custom defined**, then grant at minimum:
+     - **Test Management** → Read
+     - **Work Items** → Read
+5. Click **Create** and copy the token value immediately — it is shown only once.
+6. Paste the token as the value of `AZDO_PAT` in `config.json`.
+
 ## Example `config.json`
 
 ```json

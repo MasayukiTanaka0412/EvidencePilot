@@ -25,7 +25,7 @@ class AzureDevOpsClient:
 
     def _get(self, url: str, params: Dict[str, Any] | None = None) -> Dict[str, Any]:
         try:
-            response = requests.get(url, headers=self.headers, params=params, timeout=self.timeout)
+            response = requests.get(url, headers=self.headers, params=None, timeout=self.timeout)
         except requests.RequestException as exc:
             raise AzureDevOpsError(f"Connection to Azure DevOps failed: {exc}") from exc
 

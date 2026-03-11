@@ -1,0 +1,5 @@
+config.json
+.venv/
+captures/
+__pycache__/
+evidence_pilot.log
