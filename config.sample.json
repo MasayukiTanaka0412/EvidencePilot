@@ -1,0 +1,7 @@
+{
+  "AZDO_ORG_URL": "https://dev.azure.com/your-organization",
+  "AZDO_PROJECT": "your-project",
+  "AZDO_PAT": "your-personal-access-token",
+  "CAPTURE_ROOT": "captures",
+  "STEP_NAME_MAX_LENGTH": 40
+}
